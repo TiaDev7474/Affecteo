@@ -7,4 +7,6 @@ module com.example.affectero {
 
     opens com.example.affectero to javafx.fxml;
     exports com.example.affectero;
+    exports com.example.affectero.Controller;
+    opens com.example.affectero.Controller to javafx.fxml;
 }

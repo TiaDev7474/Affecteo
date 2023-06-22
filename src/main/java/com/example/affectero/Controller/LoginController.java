@@ -1,2 +1,5 @@
-package com.example.affectero.Controller;public class LoginController {
+package com.example.affectero.Controller;
+
+public class LoginController {
+
 }
