@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1080.0" maxWidth="1920.0" minHeight="800.0" minWidth="1000.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane alignment="TOP_CENTER" maxHeight="1080.0" maxWidth="1920.0" prefHeight="1079.0" prefWidth="1919.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="943.0" minWidth="10.0" prefWidth="453.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1476.0" minWidth="10.0" prefWidth="1467.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane maxWidth="450.0" minHeight="800.0" minWidth="450.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2c1654; -fx-background-radius: 0 28 28 0; -fx-padding: 24 0 0 0;" GridPane.halignment="CENTER">
+               <top>
+                  <ImageView fitHeight="89.0" fitWidth="291.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../../../assets/images/Logo_affecteo.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets bottom="100.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </top>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="736.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="61.0" prefWidth="450.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="          Dashboard" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Exo 2 Regular" size="18.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="DASHBOARD" selectionEnd="1" selectionStart="1" size="25" tabSize="16" text="" />
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="450.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="           Employee " textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Exo 2 Regular" size="18.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USERS" selectionEnd="1" selectionStart="1" size="27" tabSize="16" />
+                           </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="61.0" prefWidth="448.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="         Assaignment" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Exo 2 Regular" size="18.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TASKS" size="25" text="" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="155.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" layoutY="52.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="447.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0 0 54;" text="                Logout" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Exo 2 Regular" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../assets/Icons/icons8-logout-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

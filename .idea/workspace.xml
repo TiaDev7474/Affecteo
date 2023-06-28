@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cddb2342-b22d-409b-9ff2-99ef31fadc82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/SplashController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/affectero/NavigationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/HomeView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/LoginView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/RegisterView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/SplashView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/SplashController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/SplashController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/NavigationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/HomeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/HomeView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/RegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/SplashView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/SplashView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,21 +61,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "/media/riry7474/94484ECF484EAFB2/$WINDOWS.~BT/Software/fontawesomefx-8.9.jar",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/affectero/View" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/View" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.affectero.MainApplication" />
+    <configuration name="www.ong.affectero.MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="www.ong.affectero.MainApplication" />
       <module name="Affectero" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.www.ong.affectero.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -117,6 +112,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Affectero$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1687416171918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.affectero.Controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Affectero$www_ong_affectero_MainApplication.ic" NAME="www.ong.affectero.MainApplication Coverage Results" MODIFIED="1687546279930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.affectero.Controller.*</FILTER>
     </SUITE>
   </component>

@@ -5,8 +5,8 @@ module com.example.affectero {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
 
-    opens com.example.affectero to javafx.fxml;
-    exports com.example.affectero;
-    exports com.example.affectero.Controller;
-    opens com.example.affectero.Controller to javafx.fxml;
+    opens www.ong.affectero to javafx.fxml;
+    exports www.ong.affectero;
+    exports www.ong.affectero.Controller;
+    opens www.ong.affectero.Controller to javafx.fxml;
 }

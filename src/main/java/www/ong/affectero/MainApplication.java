@@ -1,6 +1,6 @@
-package com.example.affectero;
+package www.ong.affectero;
 
-import com.example.affectero.Controller.SplashController;
+import www.ong.affectero.Controller.SplashController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

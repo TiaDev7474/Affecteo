@@ -1,8 +1,7 @@
-package com.example.affectero.Controller;
+package www.ong.affectero.Controller;
 
-import com.example.affectero.NavigationManager;
+import www.ong.affectero.NavigationManager;
 import javafx.event.ActionEvent;
-
 import java.io.IOException;
 
 public class SplashController {
@@ -12,12 +11,9 @@ public class SplashController {
     public  void  setNavigationManager(NavigationManager manager){
          this.manager = manager;
     }
-
-    public void handleLoginClick(ActionEvent actionEvent) throws IOException {
+    public void handleGoToLoginClick(ActionEvent actionEvent) throws IOException {
           manager.navigationToLogin();
     }
-
-
     public void handleRegisterClick(ActionEvent actionEvent) throws IOException{
          manager.navigationToRegister();
     }
