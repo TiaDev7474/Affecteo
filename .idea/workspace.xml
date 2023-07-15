@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cddb2342-b22d-409b-9ff2-99ef31fadc82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Config/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/AddLocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Model/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/AddLocationModal.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/LocationView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/Controller/SplashController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/SplashController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/affectero/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/NavigationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/HomeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/HomeView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/LoginView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/RegisterView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/affectero/View/SplashView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/SplashView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/ong/affectero/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/ong/affectero/NavigationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/HomeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/www/ong/affectero/View/HomeView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/media/riry7474/94484ECF484EAFB2/$WINDOWS.~BT/Software/fontawesomefx-8.9.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/usr/share/java/mysql-connector-java-8.0.33.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/assets/images" />
@@ -105,6 +102,16 @@
       <updated>1687414382445</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

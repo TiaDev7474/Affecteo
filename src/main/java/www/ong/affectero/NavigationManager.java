@@ -17,7 +17,7 @@ public class NavigationManager {
     public void navigationToLogin() throws IOException{
         FXMLLoader LoginLoader = new FXMLLoader(getClass().getResource("View/LoginView.fxml"));
         Parent root = LoginLoader .load();
-        LoginController  controller = LoginLoader .getController();
+        LoginController  controller = LoginLoader.getController();
         controller.setNavigationManager(this);
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -35,6 +35,7 @@ public class NavigationManager {
         FXMLLoader HomeLoader = new FXMLLoader(getClass().getResource("View/HomeView.fxml"));
         Parent root = HomeLoader.load();
         HomeController  controller = HomeLoader.getController();
+        controller.setNavigationManager(this);
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -48,4 +49,5 @@ public class NavigationManager {
         stage.setScene(scene);
         stage.show();
     }
+
 }
