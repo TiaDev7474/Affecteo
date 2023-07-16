@@ -27,4 +27,10 @@ public class HomeController {
         container.getChildren().clear();
         container.getChildren().add(secondaryPane);
     }
+    public void goToEmployeeClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader EmployeeLoader = new FXMLLoader(getClass().getResource("/www/ong/affectero/View/EmployeeView.fxml"));
+        AnchorPane secondaryPane = EmployeeLoader.load();
+        container.getChildren().clear();
+        container.getChildren().add(secondaryPane);
+    }
 }

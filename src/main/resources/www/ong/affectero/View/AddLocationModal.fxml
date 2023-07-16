@@ -6,13 +6,12 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="429.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.ong.affectero.Controller.AddLocationController">
    <children>
       <Label layoutX="52.0" layoutY="54.0" prefHeight="18.0" prefWidth="60.0" text="Design" />
       <TextField fx:id="designField" layoutX="53.0" layoutY="87.0" prefHeight="46.0" prefWidth="420.0" promptText="Enter design name" />
       <Label layoutX="52.0" layoutY="154.0" prefHeight="18.0" prefWidth="60.0" text="Province" />
-      <ComboBox fx:id="provinceCombobBox" layoutX="52.0" layoutY="190.0" prefHeight="46.0" prefWidth="420.0" />
+      <ComboBox fx:id="provinceComboBox" layoutX="52.0" layoutY="190.0" prefHeight="46.0" prefWidth="420.0" />
       <Button layoutX="54.0" layoutY="278.0" mnemonicParsing="false" onAction="#submitLocationClick" prefHeight="46.0" prefWidth="420.0" text="SUBMIT" />
    </children>
 </AnchorPane>

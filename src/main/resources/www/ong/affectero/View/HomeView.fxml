@@ -61,7 +61,7 @@
                               <FontAwesomeIconView fill="WHITE" glyphName="DASHBOARD" selectionEnd="1" selectionStart="1" size="25" tabSize="16" text="" />
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="450.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="         Employee " textAlignment="JUSTIFY" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToEmployeeClick" prefHeight="61.0" prefWidth="450.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="         Employee " textAlignment="JUSTIFY" textFill="WHITE">
                            <font>
                               <Font name="Exo 2 Regular" size="18.0" />
                            </font>

@@ -44,7 +44,18 @@ public class Location {
 
         return 0;
     }
-
+    public static List<String> getAllLocation() throws SQLException {
+        List<String> locations = new ArrayList<>();
+        Connection connection = getConnection();
+        String selectQuery = "SELECT design FROM Lieu";
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery(selectQuery);
+        while(resultSet.next()){
+            System.out.println(resultSet.getString("design"));
+            locations.add(resultSet.getString("design"));
+        }
+        return  locations ;
+    }
     public static List<Location> getALl() throws SQLException{
         List<Location> list = new ArrayList<>();
         Connection connection = getConnection();
@@ -86,9 +97,25 @@ public class Location {
         }
         return 0;
     }
+    public static  Location getOne(int id) throws  SQLException{
+        Location location = null;
+        Connection connection = getConnection();
+        String selectQuery = "SELECT * FROM Lieu WHERE idLieu = ?";
+        PreparedStatement preparedStatement  = connection.prepareStatement(selectQuery);
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while( resultSet.next()){
+            System.out.println(resultSet.getInt("idLieu"));
+             location = new Location(resultSet.getInt("idLieu"),resultSet.getString("design"), resultSet.getString("province") );
 
 
-    private static  void printSqlExeption(SQLException ex) {
+        }
+        return  location;
+
+    }
+
+
+    static  void printSqlExeption(SQLException ex) {
         for (Throwable e: ex) {
             if (e instanceof SQLException) {
                 e.printStackTrace(System.err);

@@ -23,16 +23,19 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
+
+
+
 public class LocationController implements Initializable {
      @FXML
-     private TableView<Location>  locationTable;
+     private  TableView<Location>  locationTable;
      @FXML
      private TableColumn<Location, String> designColumn;
     @FXML
     private TableColumn<Location, Integer> locationIdColumn;
      @FXML
      private TableColumn<Location, String> provinceColumn;
-     @FXML Button  addLocationButton;
+     public    Location selectedLocation;
      private  ObservableList<Location> locationList = FXCollections.observableArrayList();
 
 
@@ -85,7 +88,10 @@ public class LocationController implements Initializable {
     }
 
 
-    public void handleUpdateLocationClick(ActionEvent actionEvent) {
+    public  void handleUpdateLocationClick(ActionEvent actionEvent) throws IOException {
+            selectedLocation =  locationTable.getSelectionModel().getSelectedItem();
+            AddLocationController addLocationController = new AddLocationController();
+            addLocationController.showAddLocationForm(this,"Update Location",selectedLocation);
 
     }
 
@@ -96,8 +102,6 @@ public class LocationController implements Initializable {
                 System.out.println(location.getLocationId());
                 int result = Location.deleteOne(location.getLocationId());
                 System.out.println(result);
-
-
             }
             refreshTableViewData();
         }else {
@@ -110,6 +114,7 @@ public class LocationController implements Initializable {
     }
 
     public void handleCreateLocationClick(ActionEvent actionEvent) throws IOException {
-         AddLocationController.showAddLocationForm();
+        AddLocationController locationController = new AddLocationController();
+        locationController.showAddLocationForm(this,"Add Location", null);
     }
 }
