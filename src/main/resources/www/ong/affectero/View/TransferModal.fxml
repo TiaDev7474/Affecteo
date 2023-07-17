@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="361.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="www.ong.affectero.Controller.TransferModalController">
+   <children>
+      <Label layoutX="62.0" layoutY="49.0" prefHeight="25.0" prefWidth="165.0" text="Transfer Location">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="transferLocationField" layoutX="62.0" layoutY="86.0" prefHeight="46.0" prefWidth="423.0" promptText="Choose a location" />
+      <Button layoutX="63.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleConfirmTransferClick" prefHeight="46.0" prefWidth="423.0" text="CONFIRM TRANSFER" />
+      <DatePicker fx:id="startDateField" layoutX="62.0" layoutY="188.0" prefHeight="46.0" prefWidth="423.0" />
+      <Label layoutX="62.0" layoutY="150.0" prefHeight="25.0" prefWidth="165.0" text="Start Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

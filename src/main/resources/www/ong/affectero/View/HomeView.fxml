@@ -69,7 +69,7 @@
                               <FontAwesomeIconView fill="WHITE" glyphName="USERS" selectionEnd="1" selectionStart="1" size="27" tabSize="16" />
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="61.0" prefWidth="448.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="          Assaignment" textAlignment="JUSTIFY" textFill="WHITE">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToAssignmentClick" prefHeight="61.0" prefWidth="448.0" style="-fx-background-color: #2c1654; -fx-label-padding: 0 0  0 54;" text="          Assaignment" textAlignment="JUSTIFY" textFill="WHITE">
                            <font>
                               <Font name="Exo 2 Regular" size="18.0" />
                            </font>

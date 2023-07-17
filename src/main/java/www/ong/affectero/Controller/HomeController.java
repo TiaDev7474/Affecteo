@@ -3,7 +3,6 @@ package www.ong.affectero.Controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 
 import javafx.scene.layout.AnchorPane;
 
@@ -11,15 +10,19 @@ import www.ong.affectero.NavigationManager;
 
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 public class HomeController {
     @FXML
     private AnchorPane container;
-    private NavigationManager manager;
+    private static NavigationManager manager;
     public  void  setNavigationManager(NavigationManager manager){
         this.manager = manager;
     }
+
+    public AnchorPane getContainer() {
+        return container;
+    }
+
 
     public void goToLocationClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader locationLoader = new FXMLLoader(getClass().getResource("/www/ong/affectero/View/LocationView.fxml"));
@@ -33,4 +36,19 @@ public class HomeController {
         container.getChildren().clear();
         container.getChildren().add(secondaryPane);
     }
+    public void goToAssignmentClick() throws IOException {
+        FXMLLoader AssignmentLoader = new FXMLLoader(getClass().getResource("/www/ong/affectero/View/AssaignmentView.fxml"));
+        AnchorPane secondaryPane = AssignmentLoader.load();
+        container.getChildren().clear();
+        container.getChildren().add(secondaryPane);
+    }
+    /*public  void updateSection(AnchorPane container) throws IOException {
+        FXMLLoader AssignmentLoader = new FXMLLoader(getClass().getResource("/www/ong/affectero/View/AssaignmentView.fxml"));
+
+        AnchorPane secondaryPane = AssignmentLoader.load();
+        manager.navigationToHome();
+        container.getChildren().clear();
+        container.getChildren().add(secondaryPane);
+    }*/
+
 }

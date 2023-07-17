@@ -47,12 +47,12 @@ public class Location {
     public static List<String> getAllLocation() throws SQLException {
         List<String> locations = new ArrayList<>();
         Connection connection = getConnection();
-        String selectQuery = "SELECT design FROM Lieu";
+        String selectQuery = "SELECT province FROM Lieu";
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(selectQuery);
         while(resultSet.next()){
-            System.out.println(resultSet.getString("design"));
-            locations.add(resultSet.getString("design"));
+            System.out.println(resultSet.getString("province"));
+            locations.add(resultSet.getString("province"));
         }
         return  locations ;
     }

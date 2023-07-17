@@ -125,6 +125,19 @@ public class Employee {
         }
         return  list ;
     }
+    public  static Employee getOne(int id) throws SQLException{
+        Employee employee = null;
+        Connection connection = getConnection();
+        String selectQuery = "SELECT * FROM Employee WHERE numEmployee=?";
+        PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
+        preparedStatement.setInt(1,id);
+        System.out.println("Here inside employee");
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()){
+            employee = new Employee(resultSet.getInt("numEmployee"),resultSet.getString("civility"),resultSet.getString("firstname"), resultSet.getString("lastname"), resultSet.getString("email"),resultSet.getString("poste"),resultSet.getString("address") );
+        }
+        return employee;
+    }
     public static List<Employee> searchByName(String filtervalue) throws SQLException {
         List<Employee> list = new ArrayList<>();
         Connection connection = getConnection();
@@ -141,5 +154,18 @@ public class Employee {
         }
         return  list ;
 
+    }
+    public static   Integer updateLocation(String newLocation,Integer numEmployee) throws SQLException {
+        Connection connection = getConnection();
+        String updateQuery = "UPDATE Employee SET address=? WHERE numEmployee=?";
+        try{
+            PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
+            preparedStatement.setString(1,newLocation);
+            preparedStatement.setInt(2,numEmployee);
+            return  preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            printSqlExeption(e);
+        }
+        return 0;
     }
 }

@@ -5,6 +5,10 @@ module com.example.affectero {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires java.sql;
+    requires kernel;
+    requires layout;
+    requires java.mail;
+    requires activation;
 
     opens www.ong.affectero to javafx.fxml;
     exports www.ong.affectero;

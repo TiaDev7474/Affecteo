@@ -2,21 +2,28 @@ package www.ong.affectero.Controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import www.ong.affectero.MainApplication;
 import www.ong.affectero.Model.Assignment;
-import www.ong.affectero.Model.Location;
+import www.ong.affectero.Model.Employee;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class AssignmentController implements Initializable {
+public class AffecationHistory implements Initializable {
     public TableView affectationTable;
     public TableColumn numAffectation;
     public TableColumn numEmployee;
@@ -25,8 +32,10 @@ public class AssignmentController implements Initializable {
     public TableColumn dateAffectationColumn;
     public TableColumn datePriseDeServiceColumn;
     public TableColumn  fetchHistoryColumn;
+    private  static  Stage modalStage;
 
     private ObservableList<Assignment> assignmentList = FXCollections.observableArrayList();
+    private  Employee selectedEmployee;
 
 
     @Override
@@ -35,7 +44,6 @@ public class AssignmentController implements Initializable {
         List<Assignment> assignments = null;
         try {
             assignments = Assignment.getAll();
-
             assignmentList.addAll(assignments);
             setTableHeaderTitle();
             numAffectation.setCellValueFactory(new PropertyValueFactory<>("numAffectation"));
@@ -54,6 +62,26 @@ public class AssignmentController implements Initializable {
 
 
     }
+    public void showtransferform(String title, Employee selectedEmployee) throws IOException {
+        try{
+            FXMLLoader historyLoader = new FXMLLoader(MainApplication.class.getResource("/www/ong/affectero/View/AffectationHistoryModal.fxml"));
+            Parent root =  historyLoader .load();
+            AffecationHistory historyController =  historyLoader.getController();
+            modalStage = new Stage();
+            modalStage.initModality(Modality.APPLICATION_MODAL);
+            modalStage.setTitle(title);
+            modalStage.setScene(new Scene(root));
+            if(selectedEmployee != null){
+                historyController.selectedEmployee = selectedEmployee;
+
+            }
+            modalStage.showAndWait();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+
+    }
     public  void refreshTableViewData() throws SQLException {
         List<Assignment> updatedAssignments = Assignment.getAll();
 
@@ -63,33 +91,12 @@ public class AssignmentController implements Initializable {
         affectationTable.refresh();
     }
     public  void setTableHeaderTitle(){
-         numAffectation.setText("N° Affectation");
-         numEmployee.setText("N° Employee");
-         newLocationColumn.setText("New Location");
-         previousLocationColumn.setText("Prev Location");
-         dateAffectationColumn.setText("Date of Affectation");
-         datePriseDeServiceColumn.setText("Start of Service Date ");
-         fetchHistoryColumn.setText("Action");
-    }
-    public void handleDeleteAffectionClick(ActionEvent actionEvent) throws SQLException {
-        List<Assignment> selectedAssignment = affectationTable.getSelectionModel().getSelectedItems();
-        for(Assignment assignment : selectedAssignment){
-             Integer result = Assignment.deleteOne(assignment.getNumAffectation());
-             System.out.println(result);
-             if(result.equals(1)){
-
-             }
-        }
-        refreshTableViewData();
-    }
-    public void handleUpdateAffectationClick(ActionEvent actionEvent) {
-    }
-    public void handleCreateAffectationClick(ActionEvent actionEvent) {
+        numAffectation.setText("N° Affectation");
+        numEmployee.setText("N° Employee");
+        newLocationColumn.setText("New Location");
+        previousLocationColumn.setText("Prev Location");
+        dateAffectationColumn.setText("Date of Affectation");
+        datePriseDeServiceColumn.setText("Start of Service Date ");
     }
 
-    public void handleSearchByDateClick(MouseEvent mouseEvent) {
-    }
-
-    public void handleSearchByNameClick(MouseEvent mouseEvent) {
-    }
 }

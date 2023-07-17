@@ -102,4 +102,17 @@ public class EmployeeController implements Initializable {
     }
 
 
+    public void handleTransferClick(ActionEvent actionEvent) throws IOException {
+        Employee selectedEmployee = employeeTable.getSelectionModel().getSelectedItem();
+        TransferModalController transferModalController = new TransferModalController();
+        AssignmentController assignmentController = new AssignmentController();
+        transferModalController.showtransferform(assignmentController , "Transfer Form", selectedEmployee);
+
+    }
+
+    public void handleViewHistoryClick(ActionEvent actionEvent) throws IOException {
+        Employee selectedEmployee = employeeTable.getSelectionModel().getSelectedItem();
+        AffecationHistory historyController = new AffecationHistory();
+        historyController.showtransferform("Transfer Form", selectedEmployee);
+    }
 }

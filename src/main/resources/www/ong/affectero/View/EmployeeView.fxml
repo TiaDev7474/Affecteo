@@ -38,6 +38,8 @@
                 <FontAwesomeIconView glyphName="TRASH" />
             </graphic>
         </Button>
-      <TextField layoutX="26.0" layoutY="43.0" prefHeight="45.0" prefWidth="350.0" />
+      <TextField layoutX="13.0" layoutY="43.0" prefHeight="45.0" prefWidth="350.0" />
+      <Button layoutX="14.0" layoutY="704.0" mnemonicParsing="false" onAction="#handleTransferClick" prefHeight="38.0" prefWidth="139.0" text="Transfer" />
+      <Button layoutX="177.0" layoutY="704.0" mnemonicParsing="false" onAction="#handleViewHistoryClick" prefHeight="38.0" prefWidth="139.0" text="View History" />
     </children>
 </AnchorPane>
